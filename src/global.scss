@@ -35,3 +35,79 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+.barra {
+    --background: #6a0085;
+    --color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    text-align: center;
+}
+
+.fondo {
+    --background: linear-gradient(180deg, rgba(97, 0, 121, 1) 0%, rgba(240, 240, 240, 1) 100%);
+}
+
+.imagen-splash {
+    margin-top: 120px;
+    width: 50%;
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px; // Agrega un espacio entre el título y el nombre
+    line-height: 1.2;
+}
+
+.subtitulo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px; // Ajusta si necesitas más o menos espacio
+    line-height: 1.2;
+}
+
+
+.imagen-login {
+    margin-top: 60px;
+    width: 25%;
+    max-width: 120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagen-principal {
+    margin-top: 0px;
+    width: 90%;
+    max-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boton {
+    width: 90%;
+    max-width: 300px;
+    padding: 14px;
+    --background: #6a0085;
+    --color: #ffffff;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto;
+    display: block;
+}
+

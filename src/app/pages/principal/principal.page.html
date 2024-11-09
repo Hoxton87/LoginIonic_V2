@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true" class="fondo">
+  <ion-grid>
+
+    <ion-row>
+      <ion-col size="12" class="ion-text-right">
+        <ion-button (click)="salir()" fill="clear" color="danger">
+          Cerrar sesión
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-text-center">
+        <ion-label class="titulo">Bienvenido</ion-label>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-text-center">
+        <ion-label class="subtitulo"> {{ nombre }} {{ apellido }} </ion-label>
+      </ion-col>
+    </ion-row>
+     
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="navegarModificarUsuario()" class="boton">Actualizar Datos Usuario</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <!-- Listado de Sedes -->
+    <ion-row *ngFor="let sede of sedes">
+      <ion-col>
+        <ion-card>
+          <img [src]="sede.IMAGEN" alt="Imagen de {{ sede.NOMBRE }}" />
+          <ion-card-header>
+            <ion-card-title>{{ sede.NOMBRE }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p><strong>Dirección:</strong> {{ sede.DIRECCION }}</p>
+            <p><strong>Teléfono:</strong> {{ sede.TELEFONO }}</p>
+            <p><strong>Horario:</strong> {{ sede.HORARIO_ATENCION }}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
+

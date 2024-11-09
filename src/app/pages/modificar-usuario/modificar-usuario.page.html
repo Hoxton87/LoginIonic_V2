@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="barra">
+    <ion-title>Modificar Datos</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="retroceder()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="fondo">
+  <ion-grid>
+
+    <!-- Mostrar la carrera actual como un label -->
+    <ion-row>
+      <ion-col>
+        <ion-label class ='titulo' >Carrera Actual: {{ carrera_actual }}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <!-- Campo oculto del correo -->
+    <ion-row>
+      <ion-col>
+        <ion-input [(ngModel)]="mdl_correo" type="hidden"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <!-- Campo para modificar la contraseña -->
+    <ion-row>
+      <ion-col>
+        <ion-input [(ngModel)]="mdl_contrasena" label="Contraseña" label-placement="floating" fill="outline" type="password"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <!-- Campo para modificar la carrera -->
+    <ion-row>
+      <ion-col>
+        <ion-input [(ngModel)]="mdl_carrera" label="Nueva Carrera" label-placement="floating" fill="outline"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <!-- Botón para confirmar los cambios -->
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="modificarUsuario()" class="boton">Confirmar</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

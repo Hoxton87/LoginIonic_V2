@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="barra">
+    <ion-title>Registro APP</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="retroceder()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content [fullscreen]="true" class = "fondo">
+  
+  <ion-img src="assets/img-splash.svg" class="imagen-login"></ion-img>
+  
+  <div class="ion-margin ion-text-center">
+    <ion-label class="titulo"> Ingresa Tus Datos </ion-label>
+  </div>
+
+  <ion-grid>
+    
+    <ion-row>
+      <ion-col>
+        <ion-input [(ngModel)]="mdl_correo" label="Correo Electronico" label-placement="floating" fill="outline"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-input [(ngModel)]="mdl_contrasena" label="Contraseña" type="password" label-placement="floating" fill="outline"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-input [(ngModel)]="mdl_nombre" label="Nombre"  label-placement="floating" fill="outline"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-input [(ngModel)]="mdl_apellido" label="Apellido"  label-placement="floating" fill="outline"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-input [(ngModel)]="mdl_carrera" label="Carrera"  label-placement="floating" fill="outline"></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="crearUsuario()" class="boton">Crear Usuario</ion-button>
+      </ion-col>
+    </ion-row>
+    
+
+  </ion-grid>
+
+</ion-content>
